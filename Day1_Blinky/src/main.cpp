@@ -19,7 +19,7 @@ void setup()
 {
   // Initialize LED pin as an output.
   pinMode(LED_BUILTIN, OUTPUT);
-  Serial.begin(115200);
+  Serial.begin(9600);
 }
 
 void loop()

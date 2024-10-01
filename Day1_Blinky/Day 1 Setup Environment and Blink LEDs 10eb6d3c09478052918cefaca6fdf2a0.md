@@ -30,7 +30,7 @@ Manual: [https://pan.baidu.com/s/1ld5FolEM42IbgrTybdVaPA?pwd=8T8H](https://pan.b
 
 1. Setup PlatformIO in VS Code
     
-    ![image.png](Day%201%20Setup%20Environment%20and%20Blink%20LEDs%2010eb6d3c09478052918cefaca6fdf2a0/image.png)
+    ![image.png](image.png)
     
 
 Why do we need to choose the right board?
@@ -63,7 +63,7 @@ How to choose the right board?
 
 After comparing the pin-out, most of them are the same as the ESP32-S3-DevKitM-1, that’s why I choose it. In the manual “ESP32-S3-Dev Module” is used, but this is not available in PlatformIO. However, the LED pinout is different, we will try the blinky example to see if it works (it shouldn’t)
 
-![image.png](Day%201%20Setup%20Environment%20and%20Blink%20LEDs%2010eb6d3c09478052918cefaca6fdf2a0/image%201.png)
+![image.png](image%201.png)
 
 # Run Example “Blinky”
 
@@ -113,7 +113,7 @@ Click “Upload”, which is the ➡️ button, success
 
 Click “Serial Monitor”, which is the 🔌 button, we can see that the LED is blinking and the serial monitor is printing out the correct message.
 
-![image.png](Day%201%20Setup%20Environment%20and%20Blink%20LEDs%2010eb6d3c09478052918cefaca6fdf2a0/image%202.png)
+![image.png](image%202.png)
 
 <aside>
 ❓
@@ -150,7 +150,7 @@ If I define LED_BUITIN to be 43 it will blinks another LED, but this will stop t
 
 The only remaining question is why is it 97 instead of 2 as shown in the pinout. 
 
-![image.png](Day%201%20Setup%20Environment%20and%20Blink%20LEDs%2010eb6d3c09478052918cefaca6fdf2a0/image%203.png)
+![image.png](image%203.png)
 
 I tried to use another board’s ADC to check if GPIO2 is high when the LED turns on.
 
@@ -183,7 +183,7 @@ I tried to use another board’s ADC to check if GPIO2 is high when the LED turn
     
     Only when #define LED_BUILTIN 2 we can see GPIO2 is oscillating, otherwise it’s just noise(forgot to screenshot).
     
-    ![image.png](Day%201%20Setup%20Environment%20and%20Blink%20LEDs%2010eb6d3c09478052918cefaca6fdf2a0/image%204.png)
+    ![image.png](image%204.png)
     
 - Conclusion:
     
